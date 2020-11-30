@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script> 
+        let n = 4
+        console.log('1:---------------------------')
+        lab(n)
+        console.log('2:---------------------------')
+        lab2(n)
+        console.log('3:---------------------------')
+        lab3(n)
+        console.log('4:---------------------------')
+        lab4(n)
+        console.log('5:---------------------------')
+        lab5(n)
+        console.log('6:---------------------------')
+        lab6(n)
+        console.log('7:---------------------------')
+        lab7(n)
+        console.log('8:---------------------------')
+        lab8(n)
+       console.log('9:---------------------------')
+        lab9(n)
+        console.log('10:---------------------------')
+        lab10(n)
+        console.log('11:---------------------------')
+        lab11(n)
+        console.log('12:---------------------------')
+        lab12(n) 
+        console.log('13:---------------------------')
+        lab13(n)
+        console.log('14:---------------------------')
+        lab14(n)
+        console.log('15:---------------------------')
+        lab15(n)
+        console.log('17:---------------------------')
+        lab17(n)
+       console.log('18:---------------------------')
+        lab18(n)
+        console.log('19:---------------------------')
+        lab19(n)
+        console.log('20:---------------------------')
+        lab20(n)
+        console.log('21:---------------------------')
+        lab21(n)
+        console.log('22:---------------------------')
+        lab22(n)
+        console.log('23:---------------------------')
+        lab23(n)
+        console.log('24:---------------------------')
+        lab24(n)
+
+
+
+
+
+
+
+        function lab(n){
+            let star = '';
+            for (let i = 0 ; i<n ; i++){
+            star += "*"
+            }
+            console.log(star)
+        }
+
+        function lab2(n){
+            
+            for (let i = 0 ; i<n ; i++){
+                let star = '';
+                for(j = 0 ; j < n ; j++){
+                    star += "*"
+
+                }
+                console.log(star+'\n')
+            }
+            
+        }
+        
+        function lab3(n){
+            for (let i = 0 ; i < n ; i++){
+                let star = ''
+                for (j= 0 ; j < n; j++){
+                    star += j+1
+                }
+                console.log(star)
+            }
+            
+        }
+
+        function lab4(n){
+            for (let i = 0 ; i<n; i++){
+                let star = ''
+                for (j = 0; j<n ; j++){
+                    star += i+1
+                }
+                console.log(star)
+            }
+            
+        }
+
+        function lab5(n){
+            for (let i = 0 ; i<n; i++){
+                let star = ''
+                for (j=0 ; j<n ; j++){
+                    star += n-i
+                }
+                console.log(star)
+            }
+        }
+
+        function lab6(n){
+            var num = 1
+            for (let i = 0 ; i<n ; i++){
+                let star = ''
+                for (j= 0 ; j<n ; j++){
+                    star += (num)
+                    num +=1
+
+                }
+                console.log(star)
+            }
+        }
+        
+        function lab7(n){
+            var num = n*n
+            for (let i = 0 ; i<n ; i++){
+                let star = ''
+                for (j= 0 ; j<n ; j++){
+                    star += (num)
+                    num -=1
+
+                }
+                console.log(star)
+            }
+        }
+        
+        function lab8(n){
+            for (let i = 0; i<n ; i++){
+                let star = ''
+                console.log(i*2)
+
+            }
+        }
+
+        function lab9(n){
+            for (let i = 1; i<=n ; i++){
+                let star = ''
+                console.log(i*2)
+
+            }
+        }
+
+        function lab10(n){
+            for (i = 1 ; i<=n ; i++){
+                let star = ''
+                for (j = 1; j <= n ; j++){
+                    star += i*j 
+                }
+                console.log(star)
+            }
+        }
+
+        function lab11(n){
+            for (i = 0 ; i < n ; i++){
+                let star = ''
+                for (j =0 ; j < n ;j++){
+                    if( i==j){
+                        star+= '-'
+                    }else{
+                        star += '*'
+                    }
+                }
+                console.log(star)
+            }
+        }
+        
+        function lab12(n){
+            for(i = 0; i<n ;i++){
+                let star = ''
+                for (j = 0 ; j<n ; j++){
+                 //star += (j==n-(i-1)) ? '-' : '*'
+                 if (i+j==n-1){
+                    star +='-'
+                 }else{
+                     star+='*'
+                 }
+                 
+                }
+                console.log(star)
+            }
+            
+        }
+
+        function lab13(n){
+            
+            for (i = 0 ; i < n ; i++){
+                let star = ''
+                for (j=0 ; j < n ; j++){
+                    if (i>=j){
+                        star+= '*'
+                    }else{
+                        star+= '-'
+                    }
+                }
+                console.log(star)
+            }
+        }
+
+        function lab14(n){
+            for (i = 0 ; i<n; i++){
+                let star = ''
+                for (j= 0 ; j < n ; j++){
+                    if (i+j >= n){
+                        star += '-'
+                    }else{
+                        star += '*'
+                    }
+                }console.log(star)
+            }
+        }
+
+        function lab15(n){
+            let star = ''
+            for (i = 0 ; i < n ; i++){
+                
+                for (j=0 ; j < n ; j++){
+                    if (i>=j){
+                        star+= '*'
+                    }else{
+                        star+= '-'
+                    }
+                }star += '\n'
+            }
+            for (i = 1 ; i<n; i++){
+                for (j= 0 ; j < n ; j++){
+                    if (i+j >= n){
+                        star += '-'
+                    }else{
+                        star += '*'
+                    }
+                }star += '\n'
+            }
+            console.log(star)
+        }
+
+        function lab17(n){
+            let star = ''
+            for (i=0 ; i<n ; i++){
+                
+                for (j=0 ; j< n ; j++){
+                    if( i+j>=n-1){
+                        star+='*'
+                    }else{
+                        star += '-'
+                    }
+                }star+='\n'
+            }console.log(star)
+        }
+        
+        function lab18(n){
+            let star = ''
+            for(i = 0 ; i<n ; i++){
+                for (j = 0 ; j <n ; j++){
+                    if (i>=j +1  ){
+                        star+='-'
+                    }else{
+                        star+='*'
+                    }
+                }star += '\n'
+            }console.log(star)
+        }
+
+        function lab19(n){
+            let star = ''
+            for (i=0 ; i<n ; i++){
+                
+                for (j=0 ; j< n ; j++){
+                    if( i+j>=n-1){
+                        star+='*'
+                    }else{
+                        star += '-'
+                    }
+                }star+='\n'
+            }
+            for(i = 1 ; i<n ; i++){
+                for (j = 0 ; j <n ; j++){
+                    if (i>=j +1  ){
+                        star+='-'
+                    }else{
+                        star+='*'
+                    }
+                }star += '\n'
+            }console.log(star)
+        }
+
+        function lab20(n){
+            var num =1 
+            let star = ''
+            for (i=0 ; i<n ; i++){
+                
+                for (j=0 ; j< n ; j++){
+                    if( i+j>=n-1){
+                        star+=num++
+                    }else{
+                        star += '-'
+                    }
+                }star+='\n'
+            }
+            for(i = 1 ; i<n ; i++){
+                for (j = 0 ; j <n ; j++){
+                    if (i>=j +1  ){
+                        star+='-'
+                    }else{
+                        star+=num++
+                    }
+                }star += '\n'
+            }console.log(star)
+        }
+
+        function lab21(n){
+            let star = ''
+            for (i=0 ; i<n ; i++){
+                
+                for (j=0 ; j< n ; j++){
+                    if( i+j>=n-1){
+                        star+='*'
+                    }else{
+                        star += '-'
+                    }
+                    
+                }
+                for (j=1 ; j < n ; j++){
+                    if (i>=j  ){
+                        star+= '*'
+                    }else{
+                        star+= '-'
+                    }
+                }
+                star+='\n'
+            }console.log(star)
+        }
+
+        function lab22(n){
+            let star = ''
+            for (i=0 ; i<n ; i++){
+                
+                for (j=0 ; j< n ; j++){
+                    if (i>=j +1  ){
+                        star+='-'
+                    }else{
+                        star+='*'
+                    }
+                    
+                }
+                for (j=1 ; j < n ; j++){
+                    if (i+j >= n){
+                        star += '-'
+                    }else{
+                        star += '*'
+                    }
+                }
+                star+='\n'
+            }console.log(star)
+        }
+
+        function lab23(n){
+            let star = ''
+            for (let i = 1; i < n+1; i++) {
+                star += '-'.repeat(n-i)
+                star += '*'.repeat(2*i-1)
+                star += '-'.repeat(n-i)
+                star += '\n'
+            }
+        
+            for (let i = n-1; i > 0; i--) {
+                star += '-'.repeat(n-i)
+                star += '*'.repeat(2*i-1)
+                star += '-'.repeat(n-i)
+                star += '\n'
+            }
+            console.log(star)
+        }
+
+        function lab24(n){
+            let star = ''
+            let count = 1
+            for (let i = 1; i < n+1; i++) {
+                star += '-'.repeat(n-i)
+                for(let j = 0; j < 2*i-1; j++) {
+                    star += count++ + ''
+                }
+                star += '-'.repeat(n-i)
+                star += '\n'
+            }
+            for (let i = n-1; i > 0; i--) {
+                star += '-'.repeat(n-i)
+                for(let j = 0; j < 2*i-1; j++) {
+                    star += count++ + ''
+                }
+                star += '-'.repeat(n-i)
+                star += '\n'
+            }
+            console.log(star)
+        }
+
+    </script>
+    
+</body>
+</html>
